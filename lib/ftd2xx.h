@@ -1,6 +1,6 @@
 /*++
 
-Copyright © 2001-2011 Future Technology Devices International Limited
+Copyright Â© 2001-2011 Future Technology Devices International Limited
 
 THIS SOFTWARE IS PROVIDED BY FUTURE TECHNOLOGY DEVICES INTERNATIONAL LIMITED "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
@@ -55,6 +55,8 @@ kernel & user mode
 #define FTD2XX_API __declspec(dllimport)
 #endif
 
+#define WIN32_LEAN_AND_MEAN // to exlude some unnecessary windows headers (see windows.h)
+#include <Windows.h>
 
 typedef PVOID	FT_HANDLE;
 typedef ULONG	FT_STATUS;
